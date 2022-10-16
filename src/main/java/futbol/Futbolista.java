@@ -25,7 +25,7 @@ public abstract class Futbolista implements Comparable{
     }
           
     public boolean equals(Futbolista f){
-        return (this.nombre.equals(f.nombre) && this.edad == f.edad && this.posicion.equals(f.posicion));
+        return this==f;
     }
     
     public abstract boolean jugarConLasManos();
